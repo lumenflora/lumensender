@@ -12,10 +12,10 @@ from telegram.ext import ApplicationBuilder, MessageHandler, CommandHandler, Con
 load_dotenv()
 BOT_TOKEN = os.getenv("BOT_TOKEN")  # From BotFather
 
-ADMIN_ID = 689045542  # Your Telegram user ID (see README for how to find this)
+ADMIN_ID = 8235639645  # Your Telegram user ID (see README for how to find this)
 
 GROUP_CHAT_IDS = [
-    -5244890092,  # Group 1  (replace with your real group IDs)
+    -5259377073,  # Group 1  (replace with your real group IDs)
     -5121742879,  # Group 2
 ]
 
