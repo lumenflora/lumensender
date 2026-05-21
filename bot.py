@@ -31,13 +31,13 @@ logging.basicConfig(
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Receives a DM from the admin and broadcasts ANY message type to all groups."""
 
+    # Only handle private (DM) messages
+    if update.effective_chat.type != "private":
+        return
+    
     # Ignore messages that aren't from the admin
     if update.effective_user.id != ADMIN_ID:
         await update.message.reply_text("⛔ You are not authorized to use this bot.")
-        return
-
-    # Only handle private (DM) messages
-    if update.effective_chat.type != "private":
         return
 
     success = 0
