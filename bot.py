@@ -18,6 +18,7 @@ GROUP_CHAT_IDS = [
     -5259377073,  # Group 1  (replace with your real group IDs)
     -5195628808,  # Group 2
     -5242371407,  # Lumen_YLP
+    -5238804852,  # Ul_SP
 ]
 
 # ============================================================
